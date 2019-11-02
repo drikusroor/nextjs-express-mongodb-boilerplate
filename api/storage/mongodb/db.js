@@ -1,6 +1,5 @@
 const mongoose = require('mongoose')
-
-const dbUri = 'mongodb://localhost/ainab'
+const dbUri = process.env.MONGODB_URI
 
 const options = {
   useNewUrlParser: true,
