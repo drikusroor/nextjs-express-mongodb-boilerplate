@@ -1,4 +1,5 @@
 const userService = require('../services/user-service')
+const { bugsnag } = require('../../config')
 
 const getList = async (req, res) => {
   const users = await userService.getList()

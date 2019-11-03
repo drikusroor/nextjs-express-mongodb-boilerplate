@@ -1,5 +1,11 @@
 const dotenv = require('dotenv')
 dotenv.config()
+
+const bugsnag = require('./bugsnag')
+
 module.exports = {
-  mongoDbUri: process.env.MONGODB_URI,
+  bugsnag,
+  env: {
+    mongoDbUri: process.env.MONGODB_URI,
+  },
 }
