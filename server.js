@@ -11,7 +11,7 @@ const apiRouter = require('./api/router')
 
 app.prepare().then(() => {
   const server = express()
-
+  server.use(express.json())
   server.use('/api', apiRouter)
 
   server.get('*', (req, res) => {

@@ -7,14 +7,26 @@ const UserSchema = new Schema({
     required: [true, 'Email is required'],
     lowercase: true,
     trim: true,
-    validate: {
-      validator: value => validator.isEmail(value),
-      message: "'{Value}' is not a valid email",
-    },
+    unique: true,
   },
   password: {
     type: String,
     required: [true, 'Password is required'],
+  },
+  salt: {
+    type: String,
+    required: [true, 'Salt is required.'],
+  },
+  activationKey: {
+    type: String,
+  },
+  activated: {
+    type: Boolean,
+    default: false,
+  },
+  blocked: {
+    type: Boolean,
+    default: false,
   },
   name: String,
 })
