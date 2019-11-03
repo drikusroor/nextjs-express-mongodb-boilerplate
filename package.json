@@ -8,6 +8,8 @@
     "start": "cross-env NODE_ENV=production node server.js"
   },
   "dependencies": {
+    "@bugsnag/js": "^6.4.3",
+    "@bugsnag/plugin-express": "^6.4.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "isomorphic-unfetch": "^3.0.0",
