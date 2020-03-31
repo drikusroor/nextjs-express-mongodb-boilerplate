@@ -14,7 +14,7 @@
     "express": "^4.17.1",
     "isomorphic-unfetch": "^3.0.0",
     "mongoose": "^5.7.7",
-    "next": "9.1.2",
+    "next": "9.3.2",
     "nodemailer": "^6.3.1",
     "nodemon": "^1.19.4",
     "react": "16.11.0",
